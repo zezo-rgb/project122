@@ -220,7 +220,7 @@ jobs: #now we will bbuild our jobs
       - attach_workspace:
           at: ~/
       - add_ssh_keys:
-          fingerprints: ["8d:c3:4c:58:32:31:71:7d:d9:b2:22:c2:9d:5d:90:b0"]
+          fingerprints: ["67:10:c2:58:46:71:0e:03:c7:f6:88:8b:03:72:d7:4e"]
       - run:
           name: Install dependencies
           command: |
@@ -315,7 +315,7 @@ jobs: #now we will bbuild our jobs
       - install_ansible
       - install_nodejs
       - add_ssh_keys:
-          fingerprints: ["f8:90:86:da:c9:69:28:c3:ef:61:2a:f5:d8:a5:cc:2e"]
+          fingerprints: ["67:10:c2:58:46:71:0e:03:c7:f6:88:8b:03:72:d7:4e"]
       - attach_workspace:
           at: ~/
       - restore_cache:
