@@ -220,7 +220,7 @@ jobs: #now we will bbuild our jobs
       - attach_workspace:
           at: ~/
       - add_ssh_keys:
-          fingerprints: ["f8:90:86:da:c9:69:28:c3:ef:61:2a:f5:d8:a5:cc:2e"]
+          fingerprints: ["8d:c3:4c:58:32:31:71:7d:d9:b2:22:c2:9d:5d:90:b0"]
       - run:
           name: Install dependencies
           command: |
@@ -450,7 +450,7 @@ workflows:  # create workflows
           requires: [test-frontend, test-backend, scan-frontend, scan-backend]
           filters:
             branches:
-              only: [master]
+              only: [main]
       - configure-infrastructure:
           requires: [deploy-infrastructure]
       - run-migrations:
